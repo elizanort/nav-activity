@@ -1,330 +1,350 @@
-:root{
-    background-color: white;
+:root {
+  background-color: white;
 }
-*, *::before, *::after{
-    box-sizing: border-box;
-}
-
-*, body{
-    margin: 0px;
-    /* font-family: 'Open Sans', sans-serif; */
-    font-family: 'Krona One', sans-serif;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6{
-    font-family: 'Krona One', sans-serif;
+*,
+body {
+  margin: 0px;
+  /* font-family: 'Open Sans', sans-serif; */
+  font-family: "Krona One", sans-serif;
 }
 
-p{
-    font-family: 'Open Sans', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Krona One", sans-serif;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
 }
 
 /* Navigation Styles Start Here */
-header{
-    background-color: rgb(241, 226, 211);
-    text-align: center;
-    position: relative;;
-    width: 100%;
-    z-index:999;
+header {
+  background-color: rgb(241, 226, 211);
+  text-align: center;
+  position: relative;
+  width: 100%;
+  z-index: 999;
 }
 
-a:link{
-    text-decoration: none;
+a:link {
+  text-decoration: none;
 }
 
-.logo{
-    color: black;
+.logo {
+  color: black;
 }
 
-.nav-toggle{
-    display: none;
+.nav-toggle {
+  display: none;
 }
 
-.nav-toggle-label{
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-left: 1em;
-    height: 100%;
-    display: flex;
-    align-items: center;
+.nav-toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1em;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .nav-toggle-label span,
 .nav-toggle-label span::before,
-.nav-toggle-label span::after{
-    display: block;
-    background: black;
-    height: 2px;
-    width: 1em;
-    border-radius: 3px;
-    position: relative;
-
+.nav-toggle-label span::after {
+  display: block;
+  background: black;
+  height: 2px;
+  width: 1em;
+  border-radius: 3px;
+  position: relative;
 }
 
 .nav-toggle-label span::before,
-.nav-toggle-label span::after{
-    content:'';
-    position: absolute;
+.nav-toggle-label span::after {
+  content: "";
+  position: absolute;
 }
 
-.nav-toggle-label span::before{
-    bottom: 5px;
+.nav-toggle-label span::before {
+  bottom: 5px;
 }
 
-.nav-toggle-label span::after{
-    top: 5px;
+.nav-toggle-label span::after {
+  top: 5px;
 }
 
-nav{
-    position: absolute;
-    text-align: left;
-    top: 100%;
-    left:0;
-    background-color:  rgb(241, 226, 211);
-    width: 100%;
-    display: none;
-    
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background-color: rgb(241, 226, 211);
+  width: 100%;
+  display: none;
 }
 
-nav ul{
-    margin: 0;
-    padding-top: 12px;
-    list-style: none;
+nav ul {
+  margin: 0;
+  padding-top: 12px;
+  list-style: none;
 }
 
-nav li{
-    margin-bottom: 1em;
-    margin-left: 1em;
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
 }
 
-nav a{
-    color: black;
-    text-decoration: none;
-    font-size: 1.1 rem;
-    text-transform: uppercase;
-    font-family: 'Open Sans', sans-serif;
+nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.1 rem;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
 }
 
-nav a:hover{
-    color: rosybrown;
+nav a:hover {
+  color: rosybrown;
 }
 
 .nav-toggle:checked ~ nav {
-    display: block;  
-
+  display: block;
 }
 
 /* Home Page Styles  */
-.intro{
-    display: flex;
-    flex-direction: column;
-    margin: 40px 16px;
+.intro {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 16px;
 }
 
-.intro h1{
-    padding: 16px 0px;
+.intro h1 {
+  padding: 16px 0px;
 }
 
-.intro p{
-    padding: 10px 0px;
+.intro p {
+  padding: 10px 0px;
 }
 
-
-.contact-buttons{
-    box-sizing: border-box;
-    display: flex;
-    margin: 16px;
-    justify-content: center;
-
+.contact-buttons {
+  box-sizing: border-box;
+  display: flex;
+  margin: 16px;
+  justify-content: center;
 }
-.basic-button{
-    padding: 5px 10px;
-    text-decoration: none;
-    display: inline-block;
-    font-size:15pt;
-    box-sizing: border-box;
-    
-    
+.basic-button {
+  padding: 5px 10px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15pt;
+  box-sizing: border-box;
 }
 
-.linked-in{
-    background: #eedede;
-    color: #373638;
-    text-align: center;
-    margin: 20px 5px;
-    border-radius: 20px;
+.linked-in {
+  background: #eedede;
+  color: #373638;
+  text-align: center;
+  margin: 20px 5px;
+  border-radius: 20px;
 }
 
-.linked-in:hover{
-    background-color: #eed3d3
+.linked-in:hover {
+  background-color: #eed3d3;
 }
 
-.facebook{
-    background: #eedede;
-    color: #373638;
-    text-align: center;
-    margin: 20px 5px;
-    border-radius: 20px;
+.facebook {
+  background: #eedede;
+  color: #373638;
+  text-align: center;
+  margin: 20px 5px;
+  border-radius: 20px;
 }
 
-.facebook:hover{
-    background-color: #eed3d3 ;
+.facebook:hover {
+  background-color: #eed3d3;
 }
 
-.instagram{
-    background: #eedede;
-    color: #373638;
-    text-align: center;
-    margin: 20px 5px;
-    border-radius: 20px;
+.instagram {
+  background: #eedede;
+  color: #373638;
+  text-align: center;
+  margin: 20px 5px;
+  border-radius: 20px;
 }
 
-.instagram:hover{
-    background-color: #eed3d3 ;
+.instagram:hover {
+  background-color: #eed3d3;
 }
 
 /* Work Tab Styles */
-.portfolio-list{
-    box-sizing: border-box;
-    list-style-type: none;
-    margin-top:50px;
-    
+
+/* You may consider making these display flex
+allowing you to change the direction in desktop view */
+
+.portfolio-list {
+  box-sizing: border-box;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-content: center space-around;
+  justify-content: center space-around;
+
+  margin-top: 50px;
 }
 
+/* You might be able to additionally have a project card class
+that would reduce some of the redundant code between projects
+a la
+.project-card{
+    width: 95%;
+    margin: auto;
+    padding: 100px 0;
+    text-align: center;
+    margin-bottom: 20px;
+} 
 .peel{
-    box-sizing: border-box;
-    width: 95%;
-    margin: auto;
-    padding: 100px 0;
-    text-align: center;
     background: #f3efef;
-    margin-bottom: 20px;
-    
+}
+*/
+
+.peel {
+  box-sizing: border-box;
+  width: 95%;
+  margin: auto;
+  padding: 100px 0;
+  text-align: center;
+  background: #f3efef;
+  margin-bottom: 20px;
 }
 
-.peel:hover{
-    background-color: rgb(250, 227, 185);
-    
+.peel:hover {
+  background-color: rgb(250, 227, 185);
 }
 
-.kenzie-profiles{
-    box-sizing: border-box;
-    width: 95%;
-    margin: auto;
-    padding: 100px 0;
-    text-align: center;
-    background:#f3efef;
-    margin-bottom: 20px;
-
+.kenzie-profiles {
+  box-sizing: border-box;
+  width: 95%;
+  margin: auto;
+  padding: 100px 0;
+  text-align: center;
+  background: #f3efef;
+  margin-bottom: 20px;
 }
 
-.kenzie-profiles:hover{
-    background-color: rgb(138, 155, 206);
-    
+.kenzie-profiles:hover {
+  background-color: rgb(138, 155, 206);
 }
 
-.plume{
-    box-sizing: border-box;
-    width: 95%;
-    margin: auto;
-    padding: 100px 0;
-    text-align: center;
-    background:#f3efef;
-    margin-bottom: 50px;
-    
+.plume {
+  box-sizing: border-box;
+  width: 95%;
+  margin: auto;
+  padding: 100px 0;
+  text-align: center;
+  background: #f3efef;
+  margin-bottom: 50px;
 }
 
-.plume:hover{
-    background-color: rgb(191, 155, 196)
+.plume:hover {
+  background-color: rgb(191, 155, 196);
 }
 
 /* Contact Page Styles */
-.contact-container{
-    display: flex;
-    width:100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
+.contact-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
 }
 
-.contact-card{
-    display: flex;
-    height: 50vh;
-    background-color: rgb(241, 226, 211);
-    width: 80vw;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+/* If the card styling wasnt intentional, you might try to 
+make the min-height of the card larger than the height of the form */
+
+.contact-card {
+  display: flex;
+  height: 50vh;
+  background-color: rgb(241, 226, 211);
+  width: 80vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.contact-card h1{
-    padding: 16px 16px;
-}
-
-.contact-form{
-    width:90%;
-    padding: 5px 0px;
-    margin: 8px 0px;  
+.contact-card h1 {
+  padding: 16px 16px;
 }
 
-.message{
-    height: 10vh;
+.contact-form {
+  width: 90%;
+  padding: 5px 0px;
+  margin: 8px 0px;
 }
 
-.checkbox-label{
-    padding:10px 20px;
+.message {
+  height: 10vh;
 }
 
-.form-button{
-    
+.checkbox-label {
+  padding: 10px 20px;
 }
 
-
+.form-button {
+  /* Style me! */
+}
 
 /* Web Styles */
-@media only screen and (min-width: 600px){
-    header{
-        display: flex;
-    }
-    .logo{
-        display: flex;
-        text-align: left;
-        margin-left: 16px;
-    }
+@media only screen and (min-width: 600px) {
+  header {
+    display: flex;
+  }
+  .logo {
+    display: flex;
+    text-align: left;
+    margin-left: 16px;
+  }
 
-    .nav-container{
-        display: flex;
-        align-content: center;
-    }
+  .nav-container {
+    display: flex;
+    align-content: center;
+  }
 
-    .nav-toggle-label{
-        display:none
-    }
+  .nav-toggle-label {
+    display: none;
+  }
 
-    nav{
-        display: flex;
-        position: relative;
-    }
+  nav {
+    display: flex;
+    position: relative;
+  }
 
-    .nav-buttons{
-        display: flex;
-        margin-right: 16px;
-    }
+  .nav-buttons {
+    display: flex;
+    margin-right: 16px;
+  }
 
-    .nav-buttons a{
-        display: flex;
-        justify-content: center;
-    }
+  .nav-buttons a {
+    display: flex;
+    justify-content: center;
+  }
 
-    .nav-container{
-        display: flex;
-        justify-content: flex-end;
-    }
+  .nav-container {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
